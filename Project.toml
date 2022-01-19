@@ -1,0 +1,10 @@
+name = "PlotlySave"
+uuid = "f4e2401c-25df-400c-adc7-b7787aea0cc3"
+authors = ["hhaensel <helmut.haensel@merckgroup.com>"]
+version = "0.1.0"
+
+[deps]
+Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Kaleido_jll = "f7e6163d-2fa5-5f23-b69c-1db539e41963"
+PlotlyBase = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
