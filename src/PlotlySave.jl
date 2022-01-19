@@ -1,11 +1,13 @@
 module PlotlySave
 
-using PlotlyBase
+using Reexport
+@reexport using PlotlyBase
 using Kaleido_jll
 using Base64
 using JSON
+using FileIO
 
-export savefig
+export save
 
 mutable struct Pipes
     stdin::Pipe
@@ -211,8 +213,26 @@ for (mime, fmt) in _KALEIDO_MIMES
         height::Union{Nothing,Int}=nothing,
         scale::Union{Nothing,Real}=nothing,
     )
-        savefig(io, Plot(plt), format=$fmt)
+        savefig(io, plt, format=$fmt)
     end
+end
+
+function FileIO.save(
+    io::IO, p::Plot, format = "png",
+    width::Union{Nothing,Int}=nothing,
+    height::Union{Nothing,Int}=nothing,
+    scale::Union{Nothing,Real}=nothing,
+)
+    savefig(io, p; format=format, width=width, height=height, scale=scale)
+end
+
+function FileIO.save(
+    filename::AbstractString, p::Plot, format="png",
+    width::Union{Nothing,Int}=nothing,
+    height::Union{Nothing,Int}=nothing,
+    scale::Union{Nothing,Real}=nothing,
+)
+    savefig(p, filename ; format=format, width=width, height=height, scale=scale)
 end
 
 end
