@@ -1,6 +1,6 @@
 name = "PlotlySave"
 uuid = "f4e2401c-25df-400c-adc7-b7787aea0cc3"
-authors = ["hhaensel <helmut.haensel@merckgroup.com>"]
+authors = ["hhaensel <helmut.haensel@gmx.de>"]
 version = "0.1.0"
 
 [deps]
