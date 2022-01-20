@@ -10,3 +10,11 @@ JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 Kaleido_jll = "f7e6163d-2fa5-5f23-b69c-1db539e41963"
 PlotlyBase = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[compat]
+Base64 = "1"
+FileIO = "1.10"
+PlotlyBase = "0.8.15"
+Reexport = "0.2, 1"
+julia = "1.3, 1.4, 1.5, 1.6"
+Kaleido_jll = "0.1"
