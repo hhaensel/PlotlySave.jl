@@ -45,7 +45,7 @@ import PlotlySave.savefig
 There is a branch
 [`hh-abstractplot`](https://github.com/hhaensel/PlotlySave#hh-abstractplot) that plays
 together with respective branches in my forks of
-`[PlotlyBase](https://github.com/hhaensel/PlotlyBase#hh-abstractplot)` and
+[`PlotlyBase`](https://github.com/hhaensel/PlotlyBase#hh-abstractplot) and
 [`PlotlyJS`](https://github.com/hhaensel/PlotlyJS#hh-abstractplot) to introduce an
 `AbstractPlot` type that both `Plot` and `SyncPlot` are subtypes of. That way many
 multiple definitions can be avoided and other projects could derive their own subtypes.
