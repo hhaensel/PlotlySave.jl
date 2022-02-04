@@ -1,7 +1,7 @@
 name = "PlotlySave"
 uuid = "f4e2401c-25df-400c-adc7-b7787aea0cc3"
 authors = ["hhaensel <helmut.haensel@gmx.de>"]
-version = "0.1.4"
+version = "0.1.5"
 
 [deps]
 Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"

@@ -8,11 +8,11 @@ of [PlotlyJS](https://github.com/sglyon/PlotlyJS.jl).
 
 ```julia
 using Pkg
-Pkg.add("https://github.com/hhaensel/PlotlySave")
+Pkg.add("PlotlySave")
 ```
 or
 ```julia
-]add https://github.com/hhaensel/PlotlySave
+]add PlotlySave
 ```
 
 ## Usage
@@ -24,8 +24,6 @@ using PlotlySave
 p1 = Plot(scatter(x=1:10, y=2:11))
 save("test.png", p1)
 ```
-
-This package might become part of JuliaPlots, and it is not (yet) registered.
 
 ## Background
 
