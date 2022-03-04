@@ -218,7 +218,8 @@ for (mime, fmt) in _KALEIDO_MIMES
 end
 
 function FileIO.save(
-    io::IO, p::Plot, format = "png",
+    io::IO, p::Plot;
+    format::String = "png",
     width::Union{Nothing,Int}=nothing,
     height::Union{Nothing,Int}=nothing,
     scale::Union{Nothing,Real}=nothing,
@@ -227,7 +228,8 @@ function FileIO.save(
 end
 
 function FileIO.save(
-    filename::AbstractString, p::Plot, format="png",
+    filename::AbstractString, p::Plot;
+    format::Union{Nothing,String}=nothing,
     width::Union{Nothing,Int}=nothing,
     height::Union{Nothing,Int}=nothing,
     scale::Union{Nothing,Real}=nothing,
